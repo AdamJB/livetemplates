@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Adam's Android">
+  <template name="vconst" value="public $CLASS_NAME$(Context context) {&#10;  this(context, null);&#10;}&#10;&#10;public $CLASS_NAME$(Context context, AttributeSet attrs) {&#10;  this(context, attrs, 0);&#10;}&#10;&#10;public $CLASS_NAME$(Context context, AttributeSet attrs, int defStyle) {&#10;  super(context, attrs, defStyle);&#10;}" description="Constructures for Views" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="tag" value="private static final String TAG = $CLASS_NAME$.class.getSimpleName();" description="Add log tag" toReformat="false" toShortenFQNames="true">
+    <variable name="CLASS_NAME" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+</templateSet>
+
